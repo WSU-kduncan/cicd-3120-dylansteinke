@@ -29,10 +29,14 @@ Once at hub.docker.com and signed in, click Create repository>add a name (in my 
     1. Use this command: `sudo docker login -u username` so in my case it would be `sudo docker login -u dylansteinke`  
     2. Then enter your password correctly.  
   
-    Instead of using a simple username and password, I would recoommend using an Access Token to signin instead. By doing this, we also will not have to worry about the password being stored in a file anywhere like we do with the username and password method.  
+    Instead of using a simple username and password, I would recoommend using an Access Token to signin instead. By doing this, we also will not have to worry about the password being stored in a file anywhere like we do with the username and password method. With this case, a new token is created on DockerHub, then copied as the password to be used for the CLI for example instead of the users password.  
 - How to push container to DockerHub  
-
+    1. Use this command to build the image: `sudo docker build -t username/repo` so in my case `sudo docker build -t dylansteinke/ceg3120` . 
+    2. Then push to dockerhub using: `sudo docker push username/repo` so in my case `sudo docker push dylansteinke/ceg3120`  
 - Configuring GitHub secrets  
+    I created two secrets, one which was my username and one which was my password  
+    Username: `DOCKER_USERNAME`  
+    Passowrd: `DOCKER_TOKEN`  
 - Behavior of GitHub workflow  
 
 ## Part 3 - Deployment
