@@ -26,10 +26,13 @@ Go to web browser on local host and go to: `http://ip:port` in my case it would 
 - Process to create public repo in DockerHub  
 Once at hub.docker.com and signed in, click Create repository>add a name (in my case I did ceg3120)>make sure Public is selected>create
 - How to authenticate with DockerHub via CLI using DockerHub credentials  
-Use this command: `sudo docker login -u username` so in my case it would be `sudo docker login -u dylansteinke`  
-Then enter your password correctly.  
-- How to push container to DockerHub
-- Configuring GitHub secrets
-- Behavior of GitHub workflow
+    1. Use this command: `sudo docker login -u username` so in my case it would be `sudo docker login -u dylansteinke`  
+    2. Then enter your password correctly.  
+  
+    Instead of using a simple username and password, I would recoommend using an Access Token to signin instead. By doing this, we also will not have to worry about the password being stored in a file anywhere like we do with the username and password method.  
+- How to push container to DockerHub  
+
+- Configuring GitHub secrets  
+- Behavior of GitHub workflow  
 
 ## Part 3 - Deployment
