@@ -66,4 +66,4 @@ Once at hub.docker.com and signed in, click Create repository>add a name (in my 
     3. Enter the webook URL (in my case it is: http://23.20.4.36:9000/hooks/pizza)
 
 ## Part 4 - Diagramming
-![diagram](images/CEG3120.png)  
+![diagram](images/diagram.png)  
