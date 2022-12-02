@@ -49,7 +49,20 @@ Once at hub.docker.com and signed in, click Create repository>add a name (in my 
     4. We start the new image into a container  
 
 - Setting up webhook on the server  
+    I created the listener by watching lecure videos and running commands from lectures to verify it was running. On a second terminal after starting the following steps, I verified it was running by using this command: `lsof | grep LISTEN`
 
+    I used the following steps to install and run webook:  
+    1. `export PATH=$PATH:/usr/local/go/bin`  
+    2. `wget https://go.dev/dl/go1.19.3.linux-amd64.tar.gz`  
+    3. `sudo tar -C /usr/local -xzf go1.19.3.linux-amd64.tar.gz`  
+    4. `go install github.com/adnanh/webhook@latest`  
+    5. `go build github.com/adnanh/webhook@latest`  
+    6. `/home/ubuntu/go/bin/webhook -hooks /home/ubuntu/cicd-3120-dylansteinke/hooks.json -verbose`  
 - Description of Webhook task definition file  
+    The definition file has an ID that dockerhub will use at the next step and uses the inforamtion in the file to run this automation. It looks at the execute-command line to see which file to run/use and then the working directory to see where the files should be stored when ran. (kidna like a temp file/folder).
+- Steps to set up a notifier in GitHub or DockerHub  
+    1. Go to Webhooks in the repo  
+    2. Enter a webhook name (in my case it is: Deploy new image)  
+    3. Enter the webook URL (in my case it is: http://23.20.4.36:9000/hooks/pizza)
 
-- Steps to set up a ntifier in GitHub or DockerHub  
+## Part 4 - Diagramming
