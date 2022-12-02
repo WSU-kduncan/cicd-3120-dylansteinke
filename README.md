@@ -38,5 +38,7 @@ Once at hub.docker.com and signed in, click Create repository>add a name (in my 
     Username: `DOCKER_USERNAME`  
     Passowrd: `DOCKER_TOKEN`  
 - Behavior of GitHub workflow  
+    The GitHub workflow that was created checksout the proper branch on Github, logs into DockerHub using my username/token, setsup Buildx, builds the image, then pushes it to Dockerhub.  
+    The variables that needed to be changes were the repository, the username secret, and the password/token secret.  
 
 ## Part 3 - Deployment
