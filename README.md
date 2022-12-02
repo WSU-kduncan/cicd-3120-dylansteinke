@@ -42,3 +42,14 @@ Once at hub.docker.com and signed in, click Create repository>add a name (in my 
     The variables that needed to be changes were the repository, the username secret, and the password/token secret.  
 
 ## Part 3 - Deployment
+- Description of container restart script  
+    1. We stop the conatiner from running  
+    2. We remove the container to open up the ports  
+    3. We pull the latest image from dockerhub  
+    4. We start the new image into a container  
+
+- Setting up webhook on the server  
+
+- Description of Webhook task definition file  
+
+- Steps to set up a ntifier in GitHub or DockerHub  
