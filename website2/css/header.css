@@ -1,0 +1,15 @@
+header {
+	background-color: red;
+	text-align: center;
+	padding: 1px;
+	color: white;
+	
+}
+
+footer {
+	background-color: red;
+	text-align: center;
+	clear: both;
+	margin-top: 5px;
+	color: white;
+}

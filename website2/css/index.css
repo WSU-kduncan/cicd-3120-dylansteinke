@@ -1,0 +1,33 @@
+main {
+	float: center;
+	padding-left: 20%;
+	padding-right: 20%;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main p {
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+h2 {
+	background-color: blue;
+	color: white;
+	font-size: 20px;;
+}
+
+span {
+	color: red;
+}
+
+label[for="name"], label[for="phone"], label[for="email"] {
+	display: inline-block;
+	width: 4.5em;
+	margin-bottom: 1em;
+}
+
+img {
+	float: right;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Baseball Caps</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/index.css">
+		<script src="scripts/main.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>Baseball Caps</h1>
+		</header>
+		<main>
+			<form id="order_form" name="order_form" action="confirm.html" method="get">
+				<img src="images/reds.png" alt="Hat" id="picture">
+				<h2>Select your team:</h2>
+				<input type="radio" name="hat" value="Cincinnati Reds" checked id="reds">
+				<label for="reds">Cincinnati Reds</label><br>
+				<input type="radio" name="hat" value="Cleveland Indians" id="indians">
+				<label for="indians">Cleveland Indians</label><br>
+				<input type="radio" name="hat" value="Detroit Tigers" id="tigers">
+				<label for="tigers">Detroit Tigers</label><br>
+				
+				<h2>Provide your shipping information:</h2>
+				<label for="name">Name</label>
+				<input type="text" id="name">
+				<span> </span><br>
+				<label for="phone">Phone</label>
+				<input type="text" id="phone">
+				<span> </span><br>
+				<label for="email">Email</label>
+				<input type="text" id="email">
+				<span> </span><br>
+				<textarea name="instructions" placeholder="Enter special instructions here" rows="3" cols="40"></textarea>
+				
+				<h2>Sign up for our mailing lists!</h2>
+				<input type="checkbox" name="promos" id="promos" value="promotions">
+				<label for="promos">Promotions</label><br>
+				<input type="checkbox" name="products" id="products" value="new roducts">
+				<label for="products">New Products</label><br>
+				<input type="checkbox" name="catalog" id="catalog" value="catalog quarterly">
+				<label for="catalog">Catalog (quarterly)</label><br><br>
+				
+				<input type="button" id="submit_form" value="Submit Order">
+				<input type="button" id="clear_form" value="Clear Form">
+			</form>
+		</main>
+		<footer> 
+			<p>Dylan Steinke - CS2800 Project 3 - Spring 2021</p>
+		</footer>
+	</body>
+</html>
