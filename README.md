@@ -1,5 +1,6 @@
 # Project 5
 I am completing this project with an EC2 instance.
+Note Dockerfile2 is the Dockerfile used for this project as it is a copy before I started messing around with extra credit. Dockerfile is the etra credit Dockerfile.  
 ## Part 1 - Dockerize it
 - How to install Docker: ([Source](https://www.simplilearn.com/tutorials/docker-tutorial/how-to-install-docker-on-ubuntu))
 ```
@@ -67,3 +68,9 @@ Once at hub.docker.com and signed in, click Create repository>add a name (in my 
 
 ## Part 4 - Diagramming
 ![diagram](images/diagram.png)  
+
+## Extra Credit - BYOP
+Added in my own website. See Dockerfile and attached photos.
+![EC1](images/EC1.png)  
+![EC2](images/EC2.png)  
+![EC3](images/EC3.png)  
