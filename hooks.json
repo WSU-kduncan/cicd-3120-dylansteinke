@@ -1,7 +1,7 @@
 [
   {
     "id": "pizza",
-    "execute-command": "/home/ubuntu/refresh.sh",
+    "execute-command": "/home/ubuntu/cicd-3120-dylansteinke/refresh.sh",
     "command-working-directory": "/var/webhook"
   }
 ]
